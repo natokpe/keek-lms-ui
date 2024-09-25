@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+// @use "wp_header_comment";
+
+// @charset "UTF-8";
+
+@use "bootstrap/scss/bootstrap-grid.scss" with (
+    $grid-gutter-width:  2.31rem, // default 1.5
+);
+
+@use "bootstrap/scss/bootstrap-utilities.scss";
+
+// @use "flag-icons/sass/flag-icons.scss" with (
+//     $flag-icons-path:        "./assets/img/flag-icons",
+//     $flag-icons-rect-path:   "/4x3",
+//     $flag-icons-square-path: "/1x1",
+//     $flag-icons-use-square:  true
+// );
+
+// @use 'swiper/swiper-bundle.css';
+// @use 'swiper/modules/effect-fade.scss';
+// @use 'swiper/modules/pagination.scss';
+// @use 'swiper/modules/autoplay.scss';
+// @use 'swiper/modules/navigation.scss';
+
+@use "fonts";
+@use "keyframes";
+@use "flaticon-regular-rounded";
+@use "flaticon-brands";
+@use "normalise";
+@use "frame";
+// @use "nav";
+@use "buttons";
+@use "forms";
+// @use "hero-banner";
+// @use "common";
+@use "page-footer";
+
+.media-column {
+    &-img {
+        background-attachment: scroll;
+        background-position: top left;
+        background-size: cover;
+
+        & > div {
+            background-color: $color-black;
+        }
+    }
+}

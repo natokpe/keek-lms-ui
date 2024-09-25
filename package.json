@@ -1,0 +1,26 @@
+{
+  "name": "keek-lms-ui",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+  },
+  "scripts": {
+    "sass": "sass --no-source-map --stop-on-error --no-error-css --style=compressed --charset --load-path=node_modules assets/scss/_index.scss:style.css",
+    "sass-watch": "sass --no-source-map --stop-on-error --no-error-css --style=compressed --charset --load-path=node_modules assets/scss/_index.scss:style.css --watch",
+    "webpack": "webpack --mode production --config webpack.config.js",
+    "webpack-watch": "webpack --mode production --env watch --config webpack.config.js",
+    "webpack-dev": "webpack --mode development --config webpack.config.js",
+    "webpack-dev-watch": "webpack --mode development --env watch --config webpack.config.js"
+  },
+  "author": "Nat Okpe",
+  "license": "ISC",
+  "devDependencies": {
+    "@flaticon/flaticon-uicons": "^3.3.1",
+    "bootstrap": "^5.3.3",
+    "copy-webpack-plugin": "^12.0.2",
+    "file-loader": "^6.2.0",
+    "jquery": "^3.7.1",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

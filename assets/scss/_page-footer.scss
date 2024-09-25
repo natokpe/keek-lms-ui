@@ -1,0 +1,61 @@
+@use 'variables' as *;
+
+.page-footer {
+    margin: 0;
+    padding: 70px 0 90px;
+    width: 100%;
+    background-color: $color-black;
+    font-family: $font-family-body;
+    font-size: $font-size;
+
+    &-desc {
+        margin: 0 0 40px;
+        padding: 0;
+        width: 100%;
+        color: #CBD5E1;
+        line-height: 1.4;
+    }
+
+    &-heading {
+        margin: 0 0 14px;
+        padding: 0;
+        color: #F1F5F9;
+        font-family: $font-family-heading;
+        font-size: $font-size-18;
+    }
+
+    &-nav {
+        margin: 0 0 40px;
+        padding: 0;
+        width: 100%;
+    }
+
+    &-menu {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style-type: none;
+
+        .menu-item {
+            margin: 10px 0;
+            padding: 0;
+            width: 100%;
+            list-style-type: none;
+
+            a {
+                margin: 0;
+                padding: 0;
+                width: auto;
+                font-family: $font-family-body-md;
+                font-size: $font-size;
+                color: #CBD5E1;
+                text-decoration: none;
+                transition: color .15s linear;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
