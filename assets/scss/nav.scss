@@ -24,6 +24,18 @@
 		opacity: 0;
 		visibility: hidden;
 
+	    @media (min-width: $grid-breakpoint-lg-min) {
+	    	width: auto;
+	    	display: inline-block;
+	    	position: unset;
+			top: unset;
+			left: unset;
+			right: unset;
+			overflow: unset;
+			opacity: unset;
+			visibility: unset;
+	    }
+
 		@at-root {
 			body.navbar-nav-active & {
 				opacity: 1;
@@ -42,6 +54,19 @@
 			min-height: calc(80vh - 60px);
 			max-height: calc(100vh - 60px);
 			position: relative;
+
+	    	@media (min-width: $grid-breakpoint-lg-min) {
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				flex-direction: unset;
+				justify-content: unset;
+				width: auto;
+				height: unset;
+				min-height: unset;
+				max-height: unset;
+				position: unset;
+	    	}
 		}
 
 		&-main {
@@ -56,6 +81,17 @@
 		    	flex-direction: row;
 		    }
 
+	    	@media (min-width: $grid-breakpoint-lg-min) {
+				margin: 0 {
+					left: 15px;
+				};
+				padding: 0;
+				border: none;
+				display: inline-block;
+				flex-direction: unset;
+				width: auto;
+	    	}
+
 			.btn {
 				margin: 8px 0 0;
 				width: 100%;
@@ -66,7 +102,6 @@
 
 			    @media (min-width: $grid-breakpoint-md-min) {
 					margin: 0 15px;
-			    	flex-direction: row;
 
 					&:first-child {
 						margin-left: 0;
@@ -76,6 +111,16 @@
 						margin-right: 0;
 					}
 			    }
+
+		    	@media (min-width: $grid-breakpoint-lg-min) {
+					margin: 0;
+					display: inline-block;
+					width: auto;
+
+					&:last-child {
+						margin-left: 10px;
+					}
+		    	}
 			}
 		}
 	}
@@ -86,6 +131,12 @@
 		display: block;
 		flex-grow: 1;
 		width: 100%;
+
+		@media (min-width: $grid-breakpoint-lg-min) {
+			display: inline-block;
+			flex-grow: unset;
+			width: auto;
+		}
 
 		& > &-menu {
 			margin: 0;
@@ -102,12 +153,28 @@
 		    	max-height: calc(100vh - 60px - 62px);
 		    }
 
+			@media (min-width: $grid-breakpoint-lg-min) {
+				padding: 0;
+				display: inline-block;
+				width: auto;
+				height: unset;
+				max-height: unset;
+				overflow: unset;
+				overflow-y: unset;
+			}
+
 			& > .menu-item {
 				margin: 5px 0;
 				padding: 0;
 				display: block;
 				width: 100%;
 				color: lighten($color-black, 20%);
+
+				@media (min-width: $grid-breakpoint-lg-min) {
+					margin: 0 5px;
+					display: inline-block;
+					width: auto;
+				}
 
 				&.current-menu-item {
 					color: $color-black;
@@ -122,6 +189,12 @@
 					background-color: transparent;
 					border-radius: 8px;
 					transition: all .25s ease;
+
+					@media (min-width: $grid-breakpoint-lg-min) {
+						padding: 8px 10px;
+						display: inline-block;
+						width: auto;
+					}
 
 					&:hover {
 						background-color: lighten($color-black, 95%);
