@@ -52,6 +52,10 @@
 			flex-direction: column;
 			width: 100%;
 
+		    @media (min-width: $grid-breakpoint-md-min) {
+		    	flex-direction: row;
+		    }
+
 			.btn {
 				margin: 8px 0 0;
 				width: 100%;
@@ -59,6 +63,19 @@
 				&:first-child {
 					margin: 0;
 				}
+
+			    @media (min-width: $grid-breakpoint-md-min) {
+					margin: 0 15px;
+			    	flex-direction: row;
+
+					&:first-child {
+						margin-left: 0;
+					}
+
+					&:last-child {
+						margin-right: 0;
+					}
+			    }
 			}
 		}
 	}
@@ -80,6 +97,10 @@
 			overflow: hidden;
 			overflow-y: auto;
 			list-style-type: none;
+
+		    @media (min-width: $grid-breakpoint-md-min) {
+		    	max-height: calc(100vh - 60px - 62px);
+		    }
 
 			& > .menu-item {
 				margin: 5px 0;
