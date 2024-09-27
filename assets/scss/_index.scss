@@ -23,11 +23,11 @@
 // @use 'swiper/modules/autoplay.scss';
 // @use 'swiper/modules/navigation.scss';
 
+@use "normalise";
 @use "fonts";
 @use "keyframes";
 @use "flaticon-regular-rounded";
 @use "flaticon-brands";
-@use "normalise";
 @use "frame";
 @use "nav";
 @use "buttons";
