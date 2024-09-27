@@ -22,12 +22,10 @@
 		transition: transform .25s ease, opacity .25s ease;
 		overflow: hidden;
 		opacity: 0;
-		transform: translateY(20%);
 
 		@at-root {
 			body.navbar-nav-active & {
 				opacity: 1;
-				transform: translateY(0);
 			}
 		}
 
@@ -55,15 +53,10 @@
 			.btn {
 				margin: 8px 0 0;
 				width: 100%;
-				// margin: 0 8px;
 
 				&:first-child {
 					margin: 0;
 				}
-
-				// &:last-child {
-				// 	margin-left: 0;
-				// }
 			}
 		}
 	}
