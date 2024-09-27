@@ -189,6 +189,7 @@
 					background-color: transparent;
 					border-radius: 8px;
 					transition: all .25s ease;
+					outline: none;
 
 					@media (min-width: $grid-breakpoint-lg-min) {
 						padding: 8px 10px;
@@ -197,6 +198,14 @@
 					}
 
 					&:hover {
+						background-color: lighten($color-black, 95%);
+					}
+
+					&:active {
+						background-color: lighten($color-black, 88%);
+					}
+
+					&:focus {
 						background-color: lighten($color-black, 95%);
 					}
 				}
