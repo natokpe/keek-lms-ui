@@ -19,13 +19,15 @@
 		top: 60px;
 		left: 0;
 		right: 0;
-		transition: transform .25s ease, opacity .25s ease;
+		transition: all .25s ease;
 		overflow: hidden;
 		opacity: 0;
+		visibility: hidden;
 
 		@at-root {
 			body.navbar-nav-active & {
 				opacity: 1;
+				visibility: visible;
 			}
 		}
 
