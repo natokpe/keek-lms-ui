@@ -3,14 +3,17 @@
 .btn {
     margin: 0;
     padding: 14px;
+    display: inline-block;
     font-size: $font-size-14;
-    font-family: $font-family-body;
-    width: auto;
+    font-family: $font-family-body-md;
+    // width: auto;
+    color: $color-black;
+    background-color: transparent;
     border: none;
     border-radius: 8px;
     outline: none;
     // outline-offset: 2px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
@@ -18,17 +21,50 @@
 
     &-primary {
         background-color: $color-primary;
+        border: 2px solid $color-primary;
 
         &:hover {
+            border: 2px solid darken($color-primary, 5%);
             background-color: darken($color-primary, 5%);
         }
 
         &:active {
+            border: 2px solid darken($color-primary, 9%);
             background-color: darken($color-primary, 9%);
         }
 
         &:focus {
+            border: 2px solid darken($color-primary, 9%);
             background-color: darken($color-primary, 9%);
         }
+    }
+
+    &-black {
+        &.btn-outline {
+            border: 2px solid $color-black;
+            color: $color-black;
+            background-color: transparent;
+
+            &:hover {
+                color: $color-white;
+                background-color: $color-black;
+            }
+
+            &:active {
+                color: $color-white;
+                background-color: lighten($color-black, 5%);
+                border: 2px solid lighten($color-black, 5%);
+            }
+
+            &:focus {
+                color: $color-white;
+                background-color: lighten($color-black, 5%);
+                border: 2px solid lighten($color-black, 5%);
+            }
+        }
+    }
+
+    &-medium {
+        padding: 10px 14px;
     }
 }

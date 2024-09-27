@@ -40,7 +40,7 @@ module.exports = ( env, options ) => {
         ],
     };
 
-    if (runMode !== 'production') {
+    if (runMode === 'production') {
         config.externals['jquery'] = 'jQuery';
     }
 

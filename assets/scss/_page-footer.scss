@@ -58,4 +58,47 @@
             }
         }
     }
+
+    &-social {
+        ul {
+            list-style-type: none;
+
+            li {
+                margin: 0 0 15px;
+                padding: 0;
+                display: inline-block;
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+
+                a {
+                    margin: 0;
+                    padding: 6px 0 0;
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: inherit;
+                    background-color: $color-white;
+                    font-size: $font-size-21;
+                    transition: all .25s ease;
+
+                    &:hover {
+                        color: inherit;
+                        background-color: $color-primary;
+                    }
+
+                    &:visited {
+                        color: inherit;
+
+                        &:hover {
+                            color: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
