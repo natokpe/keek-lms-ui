@@ -47,3 +47,49 @@
         }
     }
 }
+
+.page-section {
+    .section-heading {
+        margin: 0 0 15px;
+        padding: 0;
+        color: lighten($color-black, 10%);
+        font-size: $font-size-18;
+        font-family: $font-family-body;
+    }
+
+    .section-title {
+        margin: 0 0 20px;
+        padding: 0;
+        color: $color-black;
+        font-size: $font-size-26;
+        font-family: $font-family-body-md;
+    }
+
+    .section-summary {
+        margin: 0;
+        padding: 0;
+        color: lighten($color-black, 15%);
+        font-size: $font-size-16;
+        font-family: $font-family-body;
+    }
+
+    &.stat {
+        margin: 0;
+        padding: 40px 0;
+        width: 100%;
+        color: $color-black;
+        background-color: #fcfaf9;
+    }
+
+    &.faq {
+    }
+
+    &.cta {
+        margin: 0;
+        padding: 40px 0;
+        width: 100%;
+        color: $color-black;
+        background-color: $color-primary;
+        text-align: center;
+    }
+}

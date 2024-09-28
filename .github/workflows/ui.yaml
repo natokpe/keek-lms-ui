@@ -23,11 +23,8 @@ jobs:
     - name: Install sass
       run: npm install -g sass
 
-    - name: Compile SCSS
-      run: npm run sass
-
-    - name: Bundle scripts
-      run: npm run webpack
+    - name: Build
+      run: npm run build
 
     - name: Package build
       uses: actions/upload-artifact@v4

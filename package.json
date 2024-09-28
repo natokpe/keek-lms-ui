@@ -5,12 +5,11 @@
   "dependencies": {
   },
   "scripts": {
-    "sass": "sass --no-source-map --stop-on-error --no-error-css --style=compressed --charset --load-path=node_modules assets/scss/_index.scss:style.css",
-    "sass-watch": "sass --no-source-map --stop-on-error --no-error-css --style=compressed --charset --load-path=node_modules assets/scss/_index.scss:style.css --watch",
-    "webpack": "webpack --mode production --config webpack.config.js",
-    "webpack-watch": "webpack --mode production --env watch --config webpack.config.js",
-    "webpack-dev": "webpack --mode development --config webpack.config.js",
-    "webpack-dev-watch": "webpack --mode development --env watch --config webpack.config.js"
+    "build": "sass --stop-on-error --source-map --source-map-urls=relative --no-error-css --style=expanded --charset --load-path=node_modules assets/scss/_index.scss:style.css&&sass --stop-on-error --no-source-map --no-error-css --style=compressed --charset --load-path=node_modules assets/scss/_index.scss:style.min.css&&webpack --mode development --config webpack.config.js&&webpack --mode production --config webpack.config.js",
+    "sass": "sass --stop-on-error --source-map --source-map-urls=relative --no-error-css --style=expanded --charset --load-path=node_modules assets/scss/_index.scss:style.css&&sass --stop-on-error --no-source-map --no-error-css --style=compressed --charset --load-path=node_modules assets/scss/_index.scss:style.min.css",
+    "sass-watch": "sass --watch --source-map --source-map-urls=relative --no-error-css --style=expanded --charset --load-path=node_modules assets/scss/_index.scss:style.css",
+    "webpack": "webpack --mode development --config webpack.config.js&&webpack --mode production --config webpack.config.js",
+    "webpack-watch": "webpack --mode development --env watch --config webpack.config.js"
   },
   "author": "Nat Okpe",
   "license": "ISC",
