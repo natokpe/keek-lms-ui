@@ -10,6 +10,7 @@
 	border-bottom: 1px solid #E2E8F0;
 	width: 100%;
 	height: $navbar-height;
+	z-index: $z-index-navbar;
 
 	@at-root {
 		body.navbar-float & {

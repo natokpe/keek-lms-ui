@@ -65,7 +65,8 @@ $grid-breakpoint-lg-min: 992px;
 $grid-breakpoint-xl-min: 1200px;
 $grid-breakpoint-xxl-min: 1400px;
 
-$z-index-splashscreen: 1000000;
+$z-index-splashscreen: 9999999999;
+$z-index-navbar: 1000000000;
 
 // @mixin keep-aspect-ratio ($size: 100) {
 //     &:before {

@@ -1,6 +1,13 @@
 @use 'variables' as *;
 
 .form {
+    &-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+    }
+
     &-label {
         margin: 0 0 8px;
         padding: 0;
@@ -102,5 +109,20 @@
             font-family: $font-family-body;
             // transition: color 250ms cubic-bezier(.4,.0,.23,1);
         }
+    }
+}
+
+.input-newsletter {
+    input.form-control {
+        padding: 13px 16px {
+            right: 115px;
+        };
+    }
+
+    button {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        bottom: 2px;
     }
 }
