@@ -68,19 +68,19 @@ $grid-breakpoint-xxl-min: 1400px;
 $z-index-splashscreen: 9999999999;
 $z-index-navbar: 1000000000;
 
-// @mixin keep-aspect-ratio ($size: 100) {
-//     &:before {
-//         content: "";
-//         padding-top: #{$size + '%'};
-//         float: left !important;
-//     }
+@mixin keep-aspect-ratio ($size: 100) {
+    &:before {
+        content: "";
+        padding-top: #{$size + '%'};
+        float: left !important;
+    }
 
-//     &:after {
-//         content: "";
-//         display: block !important;
-//         clear: both !important;
-//     }
-// }
+    &:after {
+        content: "";
+        display: block !important;
+        clear: both !important;
+    }
+}
 
 // @mixin text-ellipsis {
 //     overflow: hidden;
