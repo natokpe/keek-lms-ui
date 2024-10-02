@@ -139,9 +139,6 @@
     }
 
     &-service {
-        margin-top: 100px;
-        margin-bottom: 100px;
-        
         &-item {
             margin: 16px 0 0;
             padding: 0;
@@ -200,7 +197,7 @@
 
                 .item-icon {
                     margin: 0 0 10px;
-                    color: $color-primary;
+                    color: $color-white;
                     font-size: $font-size-40;
                     transition: all .25s ease;
                 }
@@ -211,11 +208,6 @@
                 }
             }
         }
-    }
-
-    &-features {
-        margin-top: 100px;
-        margin-bottom: 100px;
     }
 
     &.stat {

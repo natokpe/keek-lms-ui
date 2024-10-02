@@ -1,0 +1,12 @@
+/node_modules/
+/style.*
+/script.*
+
+# Configuration
+/.env
+
+# Build
+/dist/
+
+# Log files
+/logs/
