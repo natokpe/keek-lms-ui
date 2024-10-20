@@ -15,6 +15,24 @@
         color: lighten($color-black, 10%);
         font-size: $font-size;
         font-family: $font-family-heading;
+
+        &-help {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            color: lighten($color-black, 40%);
+            font-size: $font-size-12;
+            font-family: $font-family-body;
+        }
+    }
+
+    &-help {
+        margin: 5px 0 0;
+        padding: 0;
+        display: block;
+        color: lighten($color-black, 40%);
+        font-size: $font-size-12;
+        font-family: $font-family-body;
     }
 
     &-control[type=text],

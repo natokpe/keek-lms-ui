@@ -1,7 +1,7 @@
 @use "sass:list";
 @use "sass:math";
 
-// $border-radius: 1px;
+$border-radius: 8px;
 
 $color-primary: #07f16c;
 // $color-secondary: #253a46;
@@ -9,6 +9,8 @@ $color-accent: #FFEB3B;
 $color-white: #fff;
 $color-black: #000;
 $color-link: #1e90ff;
+
+$color-success: #07f16c;
 
 $font-family-body:    "Inter Regular", sans-serif;
 $font-family-body-md: "Inter Medium", sans-serif;

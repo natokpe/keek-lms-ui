@@ -8,8 +8,8 @@
     $grid-gutter-width:  2.31rem, // default 1.5
 );
 
-
 @use "bootstrap/scss/bootstrap-utilities.scss";
+@use "choices.js/src/styles/choices.scss";
 
 // @use "flag-icons/sass/flag-icons.scss" with (
 //     $flag-icons-path:        "./assets/img/flag-icons",
@@ -32,6 +32,7 @@
 @use "frame";
 @use "nav";
 @use "buttons";
+@use "card";
 @use "forms";
 // @use "hero-banner";
 // @use "common";
@@ -236,5 +237,119 @@
         color: $color-black;
         background-color: $color-primary;
         text-align: center;
+    }
+}
+
+.steps {
+    &-h {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: 1px solid #E2E8F0;
+        border-radius: $border-radius;
+        overflow: hidden;
+
+        ol {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            list-style-type: none;
+
+            li {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: block;
+                border: none;
+                border-top: 1px solid #E2E8F0;
+
+                &:first-child {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.step,
+a.step {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+
+    &-status {
+        margin: 0;
+        padding: 12px 0 {
+            left: 16px;
+        };
+
+        &-indicator {
+            margin: 0;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            background-color: $color-white;
+            border: 1px dashed #9E9E9E;
+            border-radius: 50%;
+
+            @at-root {
+                .step-success & {
+                    background-color: $color-success;
+                    border: 1px solid $color-success;
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        margin: 0;
+                        padding: 0;
+                        width: 6px;
+                        height: 10px;
+                        display: block;
+                        background-color: transparent;
+                        border-color: transparent;
+                        border-right: 2px solid $color-white;
+                        border-bottom: 2px solid $color-white;
+                        transform: translate3d(0,-10px,0) rotate(45deg);
+                        transform-origin: 0% 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: calc(50% - 6px);
+                    }
+                }
+            }
+        }
+    }
+
+    &-summary {
+        margin: 0;
+        padding: 12px 16px;
+        flex-grow: 1;
+    }
+
+    &-title {
+        margin: 0;
+        padding: 0;
+        display: block;
+        color: lighten($color-black, 10%);
+        font-size: $font-size;
+        font-family: $font-family-heading;
+    }
+
+    &-action {
+        margin: 0;
+        padding: 12px 0 {
+            right: 16px;
+        };
+        display: block;
+        color: lighten($color-black, 10%);
+        font-size: $font-size;
+        font-family: $font-family-heading;
     }
 }

@@ -1,0 +1,82 @@
+@use 'variables' as *;
+
+.card {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    background-color: $color-white;
+    border-radius: $border-radius;
+
+    &-form {
+        padding: 16px;
+    }
+
+    &-header {
+        margin: 0;
+        padding: 16px 16px 0;
+        display: block;
+        width: 100%;
+        border: none;
+
+        @at-root {
+            .card.card-form > & {
+                padding: 0 0 16px;
+                border-bottom: 4px solid $color-primary;
+            }
+        }
+    }
+
+    &-title {
+        margin: 0;
+        padding: 0;
+        font-size: $font-size-18;
+    }
+
+    &-heading {
+        margin: 16px 0;
+        padding: 0;
+        font-size: $font-size-16;
+    }
+
+    &-summary {
+        margin: 10px 0 0;
+        padding: 0;
+        font-size: $font-size-13;
+        font-family: $font-family-body;
+        color: lighten($color-black, 40%);
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+    &-body {
+        margin: 0;
+        padding: 16px;
+        display: block;
+        width: 100%;
+        border: none;
+
+        @at-root {
+            .card.card-form > & {
+                padding: 20px 0;
+            }
+        }
+    }
+
+    &-footer {
+        margin: 0;
+        padding: 0 16px 16px;
+        display: block;
+        width: 100%;
+        border: none;
+
+        @at-root {
+            .card.card-form > & {
+                padding: 16px 0 0;
+                border-top: 1px solid #E2E8F0;
+            }
+        }
+    }
+}

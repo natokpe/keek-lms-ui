@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
+    "choices.js": "^11.0.2",
+    "mc-datepicker": "^0.6.5",
+    "nice-select2": "^2.2.0"
   },
   "scripts": {
     "build": "sass --stop-on-error --source-map --source-map-urls=relative --no-error-css --style=expanded --charset --load-path=node_modules assets/scss/_index.scss:style.css&&sass --stop-on-error --no-source-map --no-error-css --style=compressed --charset --load-path=node_modules assets/scss/_index.scss:style.min.css&&webpack --mode development --config webpack.config.js&&webpack --mode production --config webpack.config.js",
