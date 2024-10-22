@@ -58,7 +58,7 @@ $font-size-70: math.div(70, $font-size-number) + rem;
 $transition: all .25s ease;
 
 $navbar-height: 60px;
-// $sidebar-width: 270px;
+$sidebar-width: 270px;
 
 $grid-breakpoint-xs-min: 0;
 $grid-breakpoint-sm-min: 576px;
@@ -84,11 +84,11 @@ $z-index-navbar: 1000000000;
     }
 }
 
-// @mixin text-ellipsis {
-//     overflow: hidden;
-//     white-space: nowrap;
-//     text-overflow: ellipsis;
-// }
+@mixin text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
 // // @mixin icon-font($icon: "") {
 // //     content: $icon;

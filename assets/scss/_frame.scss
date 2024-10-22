@@ -19,6 +19,14 @@
         }
     }
 
+    @at-root {
+        .sidebar-float & {
+            @media (min-width: $grid-breakpoint-lg-min) {
+                padding-left: $sidebar-width;
+            }
+        }
+    }
+
     &-header {
         margin: 0;
         padding: 0;
@@ -43,14 +51,6 @@
         padding: 0;
         width: 100%;
         display: block;
-
-        // @at-root {
-        //     .sidebar-float & {
-        //         @media (min-width: $grid-breakpoint-lg-min) {
-        //             padding-left: $sidebar-width + 10px;
-        //         }
-        //     }
-        // }
     }
 
     &-splashscreen {
@@ -70,13 +70,6 @@
         visibility: hidden;
         opacity: 0;
         z-index: $z-index-splashscreen;
-
-        @at-root {
-            body.splashscreen & {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
 
         .preloader-area {
         }
