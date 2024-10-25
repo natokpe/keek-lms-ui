@@ -17,10 +17,8 @@
         body.navbar-float & {
             padding: $navbar-height 0 0;
         }
-    }
 
-    @at-root {
-        .sidebar-float & {
+        body.sidebar-float & {
             @media (min-width: $grid-breakpoint-lg-min) {
                 padding-left: $sidebar-width;
             }

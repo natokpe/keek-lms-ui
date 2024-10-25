@@ -8,6 +8,10 @@
     background-color: $color-white;
     border-radius: $border-radius;
 
+    &.card-border {
+        border: 1px solid #E2E8F0;
+    }
+
     &-form {
         padding: 16px;
     }
@@ -78,5 +82,85 @@
                 border-top: 1px solid #E2E8F0;
             }
         }
+    }
+}
+
+.user-details {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+
+    &-item {
+        margin: 15px 0 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+
+        &:first-child {
+            margin: 0;
+        }
+
+        &-name {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            font-size: $font-size;
+            font-family: $font-family-body;
+            color: lighten($color-black, 35%);
+        }
+
+        &-value {
+            margin: 0 {
+                left: auto;
+            };
+            padding: 0;
+            display: inline-block;
+            font-size: $font-size;
+            font-family: $font-family-body;
+            color: $color-black;
+        }
+    }
+}
+
+.user-profile {
+    &-photo {
+        margin: 0;
+        padding: 10px 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &-image {
+            margin: 0;
+            padding: 0;
+            width: 120px;
+            height: 120px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top center;
+                border-radius: 50%;
+                border: 4px solid lighten($color-black, 90%);
+            }
+        }
+    }
+
+    &-name {
+        margin: 16px 0 0;
+        padding: 0 16px;
+        width: 100%;
+        font-size: $font-size-17;
+        font-family: $font-family-heading;
+    }
+
+    &-role {
+        margin: 10px 0 0;
+        padding: 0 16px;
+        width: 100%;
+        font-size: $font-size;
+        font-family: $font-family-body;
     }
 }

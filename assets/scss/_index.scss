@@ -1,9 +1,5 @@
 @use 'variables' as *;
 
-// @use "wp_header_comment";
-
-// @charset "UTF-8";
-
 @use "bootstrap/scss/bootstrap-grid.scss" with (
     $grid-gutter-width:  2.31rem, // default 1.5
 );
@@ -18,12 +14,6 @@
 //     $flag-icons-use-square:  true
 // );
 
-// @use 'swiper/swiper-bundle.css';
-// @use 'swiper/modules/effect-fade.scss';
-// @use 'swiper/modules/pagination.scss';
-// @use 'swiper/modules/autoplay.scss';
-// @use 'swiper/modules/navigation.scss';
-
 @use "normalise";
 @use "fonts";
 @use "keyframes";
@@ -34,8 +24,6 @@
 @use "buttons";
 @use "card";
 @use "forms";
-// @use "hero-banner";
-// @use "common";
 @use "page-footer";
 
 .media-column {
