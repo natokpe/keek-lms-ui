@@ -1,0 +1,52 @@
+@use 'variables' as *;
+
+.breadcrumb {
+    margin: 40px 0 45px;
+    padding: 0;
+    width: 100%;
+    display: block;
+
+    ol {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        list-style-type: none;
+
+        li {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            font-family: $font-family-heading;
+
+            @include text-ellipsis;
+
+            &:not(:last-child):after {
+                content: "\f152";
+                margin: 0 12px;
+                display: inline-block;
+                color: lighten($color-black, 50%);
+                font-size: $font-size;
+                font-family: uicons-regular-rounded !important;
+                font-style: normal;
+                font-weight: 400 !important;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            a {
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+
+                @include text-ellipsis;
+            }
+        }
+    }
+}

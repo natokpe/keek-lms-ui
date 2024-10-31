@@ -29,9 +29,9 @@ html {
         font-family: $font-family-body;
         overflow-x: hidden;
         background-color: $color-white;
-        
+
         &.bg-grey {
-            background-color: #fcfaf9;;
+            background-color: lighten($color-black, 97%);
         }
     }
 }

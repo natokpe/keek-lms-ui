@@ -1,0 +1,61 @@
+@use 'variables' as *;
+
+.course {
+
+    &-image {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+        background-color: lighten($color-black, 93%);
+        overflow: hidden;
+        position: relative;
+        border-radius: $border-radius;
+        @include keep-aspect-ratio(60);
+
+        @media (min-width: $grid-breakpoint-lg-min) {
+            @include keep-aspect-ratio(50);
+        }
+
+        img {
+            margin: 0;
+            width: 100%;
+            // height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: transparent;
+            object-fit: cover;
+            object-position: top center;
+
+            &:before {
+                content: "Image";
+                font-size: $font-size-20;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                color: lighten($color-black, 70%);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+            }
+
+        }
+    }
+}
+
+.page-category {
+    margin: 0;
+    padding: 6px 12px;
+    display: inline-block;
+    width: auto;
+    background-color: lighten($color-primary, 30%);
+    color: $color-black;
+    border-radius: $border-radius;
+    font-size: $font-size-13;
+}
